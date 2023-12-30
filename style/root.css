@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+	--ff-link: 'Montserrat', sans-serif;
+	--ff-intro: 'Lato', sans-serif;
+	--ff-sections: 'Open Sans', sans-serif;
+
+	--cl-prim: #c23a63;
+	--cl-2: #ff69b4;
+	--cl-3: #556b2f;
+	--cl-4: #fceccf;
+	--cl-5: #8b4513;
+
+	/*Paleta 2 Opcional*/
+
+	--clp2-prim: #006400;
+	--clp2-2: #8f9779;
+	--clp2-3: #f5f5dc;
+	--clp2-4: #d2b48c;
+}
+/* ------------------- */

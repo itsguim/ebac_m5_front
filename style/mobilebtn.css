@@ -1,0 +1,49 @@
+.mobile__button {
+	cursor: pointer;
+	width: 2.5rem;
+	height: 2rem;
+	position: relative;
+	background: none;
+	border: none;
+}
+
+.mobile__button::before,
+.mobile__button::after,
+.mobile__button .btn-line {
+	content: '';
+	width: 2.5rem;
+	height: 4px;
+	background-color: var(--cl-4);
+	position: absolute;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+}
+
+.mobile__button::before {
+	top: 0;
+	left: 0;
+}
+
+.mobile__button::after {
+	bottom: 0;
+	left: 0;
+}
+
+.mobile__button .btn-line {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* .menu-button.active::before {
+	transform: rotate(-45deg);
+	top: 50%;
+}
+
+.menu-button.active::after {
+	transform: rotate(45deg);
+	bottom: 50%;
+}
+
+.menu-button.active div {
+	opacity: 0;  // Esconde a barra do meio quando o ícone está ativo
+} */
