@@ -15,22 +15,20 @@ let navStateLarge = false // True ativa o estado de barra larga (Desktop) // Fal
 function changeNavBar() {
   // Pegar width
   const windowSize = window.innerWidth
-  // 1: add a barra larga
-  if (windowSize >= 768 && !navStateLarge) {
+  // 1: add a barra larga, 2: remove a barra e ativa o menu mobile
+  if (windowSize >= 1024 && !navStateLarge) {
     navLocation.insertAdjacentHTML('afterbegin', navLarge)
     navLocation.style.flexDirection = 'row-reverse'
     navMobileButton.style.display = 'none'
     navStateLarge = true
-  } else if (windowSize < 768 && navStateLarge) {
+  } else if (windowSize < 1024 && navStateLarge) {
     navLocation.firstElementChild.remove()
     navLocation.style.flexDirection = 'row'
     navMobileButton.style.display = 'block'
     navStateLarge = false
   }
 }
-
 // Checa ao inicializar
 changeNavBar()
-
 // Executa ao dar resize
 window.addEventListener('resize', changeNavBar)

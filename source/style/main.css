@@ -1,0 +1,10 @@
+/* Em ordem de cascata, respeitando a hierarquia 
+(De cima pra baixo assim como a leitura do código) */
+
+@import url(./general/reset.css);
+@import url(./general/root.css);
+@import url(./navbar/navbar.css);
+@import url(./navbar/mobilebtn.css);
+@import url(./hero/hero.css);
+
+@import url(./main-media-query.css);

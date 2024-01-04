@@ -1,7 +1,0 @@
-/* Em ordem de cascata, respeitando a hierarquia 
-(De cima pra baixo assim como a leitura do código) */
-
-@import url(./style/reset.css);
-@import url(./style/root.css);
-@import url(./style/navbar.css);
-@import url(./style/mobilebtn.css);

@@ -1,0 +1,48 @@
+.bg_hero {
+	position: relative;
+	background: url(../../public/Herobg.jpg) no-repeat center;
+	background-size: cover;
+	background-position: 25% 75%;
+	min-height: 35rem;
+}
+
+.bg_hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582));
+	z-index: 2;
+}
+
+.hero_section.wrapper {
+	position: relative;
+	z-index: 3;
+}
+
+.hero_section {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 30rem;
+}
+
+.hero_section__img {
+	width: clamp(12rem, 25vw, 25rem);
+}
+
+.hero_section__title {
+	font-family: var(--ff-intro);
+	font-weight: 400;
+	word-break: break;
+	font-size: clamp(2rem, 5vw, 3.2rem);
+	max-width: 30rem;
+	color: var(--cl-4);
+}
+
+.hero_section__title span {
+	color: var(--cl-prim);
+	font-weight: bold;
+}

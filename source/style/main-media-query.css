@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+	.hero_section {
+		flex-direction: column-reverse;
+	}
+
+	.hero_section__img {
+		padding-block: 2rem 1rem;
+	}
+
+	.hero_section__title {
+		text-align: center;
+	}
+}

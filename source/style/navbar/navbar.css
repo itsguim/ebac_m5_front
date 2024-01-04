@@ -3,20 +3,11 @@ nav {
 }
 
 nav > .wrapper {
-	max-width: 85%;
 	display: flex;
 	margin: auto;
 	justify-content: space-between;
 	align-items: center;
 }
-
-/* .flex-reverse {
-	flex-direction: row-reverse;
-}
-
-.flex-row {
-	flex-direction: row;
-} */
 
 .nav__logo {
 	width: 6rem;
