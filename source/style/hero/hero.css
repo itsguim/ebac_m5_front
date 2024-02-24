@@ -17,20 +17,21 @@
 	z-index: 2;
 }
 
-.hero_section.wrapper {
-	position: relative;
-	z-index: 3;
-}
-
 .hero_section {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	min-height: 30rem;
+	z-index: 3;
+	--anim-hero: slideRight 0.8s forwards;
+	--anim-hero-delay: 1s slideRight 0.8s forwards;
 }
 
-.hero_section__img {
+.hero_section__brand {
 	width: clamp(12rem, 25vw, 25rem);
+	opacity: 0;
+	animation: var(--anim-hero-delay);
 }
 
 .hero_section__title {
@@ -40,6 +41,7 @@
 	font-size: clamp(2rem, 5vw, 3.2rem);
 	max-width: 30rem;
 	color: var(--cl-4);
+	animation: var(--anim-hero);
 }
 
 .hero_section__title span {

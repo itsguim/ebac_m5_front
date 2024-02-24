@@ -3,6 +3,7 @@
 
 @import url(./general/reset.css);
 @import url(./general/root.css);
+@import url(./general/animations.css);
 @import url(./navbar/navbar.css);
 @import url(./navbar/mobilebtn.css);
 @import url(./hero/hero.css);
