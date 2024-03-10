@@ -1,9 +1,14 @@
+header {
+	display: flex;
+	align-items: center;
+}
+
 .bg_hero {
 	position: relative;
-	background: url(../../public/Herobg.jpg) no-repeat center;
+	background: url(../../public/HeroBg.jpg) no-repeat center;
 	background-size: cover;
 	background-position: 25% 75%;
-	min-height: 35rem;
+	min-height: 100vh;
 }
 
 .bg_hero::before {
@@ -13,7 +18,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582));
+	background: linear-gradient(rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.835));
 	z-index: 2;
 }
 
@@ -25,20 +30,21 @@
 	min-height: 30rem;
 	z-index: 3;
 	--anim-hero: slideRight 0.8s forwards;
-	--anim-hero-delay: 1s slideRight 0.8s forwards;
+	--anim-hero-delayed: 1s slideRight 0.8s forwards;
+	gap: 10rem;
 }
 
 .hero_section__brand {
-	width: clamp(12rem, 25vw, 25rem);
+	width: clamp(18rem, 26vw, 27rem);
 	opacity: 0;
-	animation: var(--anim-hero-delay);
+	animation: var(--anim-hero-delayed);
 }
 
 .hero_section__title {
 	font-family: var(--ff-intro);
 	font-weight: 400;
 	word-break: break;
-	font-size: clamp(2rem, 5vw, 3.2rem);
+	font-size: clamp(2.4rem, 5vw, 3.2rem);
 	max-width: 30rem;
 	color: var(--cl-4);
 	animation: var(--anim-hero);
@@ -47,4 +53,6 @@
 .hero_section__title span {
 	color: var(--cl-prim);
 	font-weight: bold;
+	opacity: 0;
+	animation: var(--anim-hero-delayed);
 }
